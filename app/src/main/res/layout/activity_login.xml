@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.adeeb.mrpizprototype1.Login"
+    android:orientation="vertical"
+    android:id="@+id/linear"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/uifoto"
+        android:transitionGroup="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+          >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:weightSum="2"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/imageView"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView2"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:src="@drawable/dw"
+                    android:layout_marginLeft="-5dp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/imageView3" />
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logopizsmall"
+
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+
+
+            <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="cell #"
+        android:layout_marginTop="50dp"
+        android:id="@+id/email"
+            android:typeface="serif"
+            android:background="@drawable/uifoto"
+            android:autoText="false"
+            android:textColor="#17045b"
+            android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:textColorHint="#25bfff" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password:"
+        android:id="@+id/password"
+        android:layout_marginTop="10dp"
+        android:typeface="serif"
+        android:textColor="#17045b"
+        android:singleLine="false"
+        android:textStyle="normal|bold"
+        android:background="@drawable/uifoto"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center"
+        android:textColorHint="#25bfff" />
+
+    <Button
+        android:layout_width="wrap_content"
+
+        android:text="Login"
+        android:id="@+id/loginbtn"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#25bfff"
+        android:textStyle="bold"
+        android:textColorHighlight="#0de2ff"
+        android:textSize="20dp"
+        android:background="@drawable/uifoto"
+        android:layout_height="40dp"
+        android:typeface="serif"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        android:text="SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/tvsingup"
+
+        android:textColor="#25bfff"
+        android:textColorHighlight="#0de2ff"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/uifoto"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+</LinearLayout>

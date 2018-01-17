@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="15dp"
+        android:layout_margin="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bgogange"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pizza_image_id"
+                    android:background="@drawable/piza4"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Details"
+
+
+                    android:gravity="center"
+                    android:textColor="#dd7a19"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:shadowColor="#FF010000"
+                    android:shadowRadius="1"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:id="@+id/pizatxt"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:typeface="serif" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pizzabnt"
+                    android:text="+"
+
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:id="@+id/list_piza_time"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#fbfcff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:shadowColor="#FF010000"
+                    android:shadowRadius="1"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:typeface="sans"
+                  />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:id="@+id/list_piza_time2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:textColor="#fbfcff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:shadowColor="#FF010000"
+                    android:shadowRadius="1"
+                    android:shadowDx="2"
+                    android:shadowDy="2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Client Name: "
+                    android:id="@+id/list_piza_username1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#fbfcff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:shadowColor="#FF010000"
+                    android:shadowRadius="1"
+                    android:shadowDx="2"
+                    android:shadowDy="2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:id="@+id/list_piza_username2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#fbfcff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:shadowColor="#FF010000"
+                    android:shadowRadius="1"
+                    android:shadowDx="2"
+                    android:shadowDy="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:id="@+id/list_piza_city"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#fbfcff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:shadowColor="#FF010000"
+                    android:shadowRadius="1"
+                    android:shadowDx="2"
+                    android:shadowDy="2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:id="@+id/list_piza_city2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#fbfcff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:shadowColor="#FF010000"
+                    android:shadowRadius="1"
+                    android:shadowDx="2"
+                    android:shadowDy="2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Country"
+                    android:id="@+id/list_piza_country"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#fbfcff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:shadowColor="#FF010000"
+                    android:shadowRadius="1"
+                    android:shadowDx="2"
+                    android:shadowDy="2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:id="@+id/list_piza_country2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#fbfcff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:shadowColor="#FF010000"
+                    android:shadowRadius="1"
+                    android:shadowDx="2"
+                    android:shadowDy="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Price:"
+                    android:id="@+id/listprice1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#fbfcff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:shadowColor="#FF010000"
+                    android:shadowRadius="1"
+                    android:shadowDx="2"
+                    android:shadowDy="2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0-/"
+                    android:id="@+id/listprice2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#fbfcff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:shadowColor="#FF010000"
+                    android:shadowRadius="1"
+                    android:shadowDx="2"
+                    android:shadowDy="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Items:"
+                    android:id="@+id/list_piza_items"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#fbfcff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:shadowColor="#FF010000"
+                    android:shadowRadius="1"
+                    android:shadowDx="2"
+                    android:shadowDy="2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-/"
+                    android:id="@+id/list_piza_items2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#fbfcff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:shadowColor="#FF010000"
+                    android:shadowRadius="1"
+                    android:shadowDx="2"
+                    android:shadowDy="2" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offer by:"
+                    android:id="@+id/list_piza_offerby1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#fbfcff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:shadowColor="#FF010000"
+                    android:shadowRadius="1"
+                    android:shadowDx="2"
+                    android:shadowDy="2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="restaurant name"
+                    android:id="@+id/list_piza_offerby2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#fbfcff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:shadowColor="#FF010000"
+                    android:shadowRadius="1"
+                    android:shadowDx="2"
+                    android:shadowDy="2" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

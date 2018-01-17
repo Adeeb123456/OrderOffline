@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adeeb.mrpizprototype1.Register"
+    android:orientation="vertical"
+    android:id="@+id/linear"
+    android:background="@drawable/uifoto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:id="@+id/hori">
+
+
+
+
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:text=""
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celebrate your birthday with us"
+            android:id="@+id/textView5"
+            android:padding="5dp"
+            android:background="#565588cd"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp" />
+
+        <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:hint="Name"
+        android:id="@+id/name"
+        android:background="@drawable/uifoto"
+        android:paddingLeft="20dp"
+            android:layout_marginTop="10dp" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:text=""
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:hint="Email"
+        android:id="@+id/cell"
+        android:background="@drawable/uifoto"
+        android:paddingLeft="20dp"
+        android:inputType="textEmailAddress"
+        android:visibility="gone" />
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:id="@+id/mypass"
+        android:background="@drawable/uifoto"
+        android:paddingLeft="20dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:text=""
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="Phone"
+        android:id="@+id/mycell"
+        android:background="@drawable/uifoto"
+        android:paddingLeft="20dp"
+        android:phoneNumber="false" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="2"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etdaybirth"
+                android:layout_weight="1"
+                android:hint="Day (e.g 3)"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#565588cd"
+                android:visibility="gone" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etbirthmonth"
+                android:layout_weight="1"
+                android:hint="Month (e.g 4)"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#565588cd"
+                android:layout_marginLeft="3dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="SignUp"
+            android:id="@+id/registerbtn"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/uifoto"
+            android:textColor="#25bfff"
+            android:textStyle="normal|bold"
+            android:typeface="serif"
+            android:theme="@style/AppTheme"
+            android:translationZ="@dimen/abc_action_button_min_height_material"
+            android:textSize="20dp"
+            android:textColorHighlight="#a4ff1f"
+            android:singleLine="false"
+            android:shadowColor="#153637"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

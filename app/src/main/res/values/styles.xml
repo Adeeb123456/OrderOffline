@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorAccent">#FFFF018C</item>
+        <item name="colorPrimary">#ffa50a</item>
+
+
+    </style>
+
+    <style name="myCustomtheme" parent="ThemeOverlay.AppCompat.Light">
+
+        <item name="android:textColorPrimary">#ffa50a</item>
+        <item name="android:textColorSecondary">@color/Gold</item> <!--.. -->
+    </style>
+
+    <style name="myCustompopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">#000</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+
+    </style>
+    <style name="myEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/Indigo</item>
+        <item name="colorControlActivated">#f01e05</item>
+        <item name="android:keyBackground">@drawable/dialog</item>
+        <item name="android:keyTextColor">@color/DeepPink</item>
+
+
+
+
+    </style>
+
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorControlNormal">@color/White</item>
+        <item name="colorControlActivated">@color/Gold</item>
+        <item name="colorAccent">@color/Gold</item>
+        <item name="android:textColorPrimary">@color/White</item>
+        <item name="android:textColorAlertDialogListItem">@color/White</item>
+        <item name="android:windowBackground">@drawable/dialog</item>
+
+
+
+    </style>
+
+</resources>

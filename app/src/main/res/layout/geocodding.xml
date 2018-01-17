@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView android:text="you are at"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#402bff"
+        android:textSize="20sp"
+        />
+    <TextView
+
+        android:id="@+id/lblLocation"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fb696969"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonShowLocation"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#72b1ff"
+        android:layout_marginTop="80dp"
+        android:text="get location" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLocationUpdates"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#87cdff"
+
+        android:text="get location updates"
+        android:background="#0dff0738" />
+
+</LinearLayout>
